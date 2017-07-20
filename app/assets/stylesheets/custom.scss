@@ -1,0 +1,91 @@
+@import 'bootstrap';
+html,body{
+  height: 100% !important;
+  width: 100% !important;
+  font-size: 0.9rem !important;
+  section.registration_form{
+    height: 100% !important;
+    width: 100% !important;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    padding-top: 0%;
+    padding-bottom: -2%;
+    background: #eceeef;
+    .card-block.cost{
+      font-size: 0.8rem !important;
+    }
+  }
+  .page_index{
+    padding-top: 0%;
+    padding-bottom: 2%;
+    img{
+      padding-top: 1%;
+      padding-bottom: 1%;
+      width: auto;
+      height: 250px;
+    }
+    .button{
+      padding-top: 2%;
+      padding-bottom: 2%;
+      .btn{
+        border-radius: 0px;
+      }
+    }
+  }
+
+
+  .registration_show{
+
+    .nav {
+      a{
+        margin-bottom: 15px;
+      }
+    }
+  }
+  .card{
+    a{color: #292b2c;}
+    a:hover{
+      cursor: auto;
+      text-decoration: none !important;
+    }
+    .card-block{
+      .btn.btn-success{
+        border-radius: none !important;
+      }
+    }
+  }
+
+  .card-inverse.brownies{
+    background-color: #eceeef !important;
+    color: #292b2c;
+    font-weight: bold!important;
+  }
+  .card-header{
+    background-color: #fff500 !important;
+  }
+
+  .list-group-item{
+    border: none !important;
+  }
+  .list-group-item.info {
+    z-index: 2;
+    color: #fff;
+    background-color: #5bc0de !important;
+    border-color: #0275d8;
+    border-radius: none !important;
+  }
+
+  .list-group-item:first-child {
+    border-top-radius: none !important;
+  }
+
+  .logo{
+    // padding-top: 1%;
+    // padding-bottom: 1%;
+    width: auto;
+    height: 100px;
+  }
+}
+nav{
+  margin-bottom: 4%;
+}
