@@ -6,9 +6,11 @@
 
   <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
     <ul class="navbar-nav mr-auto mt-2 mt-md-0">
-      <%= link_to "Beranda", root_url, class: "nav-link" %>
-      <%= link_to "Dosen", "#", class: "nav-link" %>
-      <%= link_to "Mahasiswa", "#", class: "nav-link" %>
+      <li><%= link_to "Beranda", root_url, class: "nav-link" %></li>
+      <li><%= link_to "Dosen", "#", class: "nav-link" %></li>
+      <li><%= link_to "Mahasiswa", "#", class: "nav-link" %></li>
+
+
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
          Persuratan
@@ -24,8 +26,10 @@
          Kuliah
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+         <a class="dropdown-item" href="#">KRS</a>
          <a class="dropdown-item" href="#">Jadwal</a>
          <a class="dropdown-item" href="#">Mata Kuliah</a>
+         <a class="dropdown-item" href="#">Nilai</a>
         </div>
       </li>
       <li class="nav-item dropdown">
@@ -39,6 +43,11 @@
       </li>
             <%#= link_to "Mahasiswa", destroy_user_session_path, method: :delete,  class: "nav-link" %>
     </ul>
+    <ul class="navbar-nav mt-2 mt-md-0">
+      <li class="pull-right"><%= link_to "Login", "#", class: "nav-link" %></li>
+      <li class="pull-right"><%= link_to "Daftar", "#", class: "nav-link" %></li>
+    </ul>
+
 
   </div>
 </nav>
