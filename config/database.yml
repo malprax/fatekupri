@@ -1,0 +1,16 @@
+defaults: &defaults
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  port: 5432
+
+development:
+  database: fatekupri_development
+  host: localhost
+  <<: *defaults
+
+
+
+production:
+  database: fatekupri_production
+  <<: *defaults
