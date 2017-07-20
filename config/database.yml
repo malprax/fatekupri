@@ -11,6 +11,6 @@ development:
 
 
 
-production:
-  database: fatekupri_production
-  <<: *defaults
+# production:
+#   database: fatekupri_production
+#   <<: *defaults
