@@ -85,4 +85,4 @@ gem "font-awesome-rails"
 gem 'newrelic_rpm'
 
 #debug email
-gem 'mailcatcher'
+# gem 'mailcatcher'
