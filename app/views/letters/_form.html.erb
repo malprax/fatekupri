@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <div class="card">
+          <%= simple_form_for @letter do |f| %>
+            <div class="col-8">
+              <div class="card-block">
+                <%= render partial: "letters/form/content", locals:{letter: f} %>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="card-block">
+
+              </div>
+            </div>
+          <% end %>
+      </div>
+    </div>
+  </div>
+</div>
