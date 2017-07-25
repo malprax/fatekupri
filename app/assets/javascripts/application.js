@@ -13,7 +13,9 @@
 
 //= require jquery
 //= require tether
+//= require ./FATEKUPRI/init
+//= require_tree ./FATEKUPRI/views
+//= require_tree ./FATEKUPRI/plugins
 //= require bootstrap-sprockets
 //= require rails-ujs
 //= require turbolinks
-//= require_tree .

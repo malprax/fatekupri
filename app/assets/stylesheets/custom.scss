@@ -1,5 +1,8 @@
 @import 'bootstrap';
 html,body{
+  .hidden{
+    display: none;
+  }
   height: 100% !important;
   width: 100% !important;
   font-size: 0.9rem !important;

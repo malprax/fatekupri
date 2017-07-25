@@ -1,1 +1,6 @@
 <%= render 'form' %>
+<%= content_for :javascripts do %>
+  <script type="text/javascript">
+    FATEKUPRI.Letter.initLetter();
+  </script>
+<% end %>

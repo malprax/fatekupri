@@ -1,4 +1,4 @@
-<%= letter.input :letter_kind, collection: Letter.letter_list, label: "Jenis Persuratan", id: "letter_type", wrapper: :custom_inputs %>
+<%= letter.input :letter_kind, collection: Letter.letter_list, label: "Jenis Persuratan", wrapper: :custom_inputs %>
 <%= letter.input :name, label: "Nama", wrapper: :custom_inputs %>
 <%= letter.input :stambuk, label: "Stambuk", wrapper: :custom_inputs%>
 <%= letter.input :department, label: "Jurusan", wrapper: :custom_inputs %>
@@ -8,13 +8,13 @@
 <%= letter.input :phone, label: "No. Telepon(HP)", wrapper: :custom_inputs %>
 
 <!-- Surat Keterangan Lulus -->
-<div id="Surat Keterangan Lulus" class="hidden letter_type">
+<div id="Surat Keterangan Lulus" class="letter_type">
   <%= letter.input :yudisium_date, label: "Tanggal Yudisium", wrapper: :custom_inputs %>
   <%= letter.input :essay_title, label: "Judul Skripsi", wrapper: :custom_inputs %>
 </div>
 
 <!-- Surat Keterangan Kuliah Tanggungan -->
-<div id="Surat Keterangan Kuliah Tanggungan" class="hidden letter_type">
+<div id="Surat Keterangan Kuliah Tanggungan" class="letter_type">
   <%= letter.input :parents_name, label: "Nama Orang Tua", wrapper: :custom_inputs %>
   <%= letter.input :employee_number, label: "NIP/NRP/NIDN", wrapper: :custom_inputs %>
   <%= letter.input :employee_level, label: "Pangkat", wrapper: :custom_inputs %>
@@ -23,15 +23,16 @@
 </div>
 
 <!-- Surat Keterangan Akreditasi Alumni -->
-<div id="Surat Keterangan Akreditasi Alumni" class="hidden letter_type">
+<div id="Surat Keterangan Akreditasi Alumni" class="letter_type">
   <%= letter.input :number_diploma_university, label: "No. Ijazah Universitas", wrapper: :custom_inputs %>
   <%= letter.input :number_diploma_faculty, label: "No. Ijazah Fakultas", wrapper: :custom_inputs %>
 </div>
 
 <%= letter.input :semester_genap_ganjil, collection: Letter.ganjil_genap, label: "Semester Ganjil/Genap", wrapper: :custom_inputs %>
-<%= letter.input :education_year, label: "Tahun Ajaran", wrapper: :custom_inputs  %>
 <%= letter.input :formers, label: "Pejabat Struktural", wrapper: :custom_inputs  %>
-<%= letter.input :disposition_date, label: "Tanggal Disposisi", wrapper: :custom_inputs  %>
 <%= letter.input :administration_head, collection: Letter.administration_list, include_blank: false, label: "Kepala Tata usaha", wrapper: :custom_inputs  %>
-<%= letter.input :institute_to, label: "Institusi Tujuan", wrapper: :custom_inputs  %>
+
+<div id="Surat Keterangan Pindah Kampus" class="letter_type">
+  <%= letter.input :institute_to, label: "Institusi Tujuan", wrapper: :custom_inputs  %>
+</div>
 <%= letter.submit %>

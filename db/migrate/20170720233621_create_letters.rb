@@ -26,6 +26,8 @@ class CreateLetters < ActiveRecord::Migration[5.1]
       t.string :institute_to
       t.string :number_diploma_university
       t.string :number_diploma_faculty
+      t.string :avatar
+
 
       t.timestamps
     end

@@ -41,6 +41,7 @@ ActiveRecord::Schema.define(version: 20170720233621) do
     t.string "institute_to"
     t.string "number_diploma_university"
     t.string "number_diploma_faculty"
+    t.string "avatar"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

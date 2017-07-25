@@ -14,6 +14,11 @@ class LettersController < ApplicationController
       end
     end
   end
+
+  def show
+
+  end
+  
   private
   def set_letter
     @letter = Letter.find(params[:id])

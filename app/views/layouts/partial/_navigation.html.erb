@@ -44,6 +44,15 @@
             <%#= link_to "Mahasiswa", destroy_user_session_path, method: :delete,  class: "nav-link" %>
     </ul>
     <ul class="navbar-nav mt-2 mt-md-0">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+         MABA
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+         <a class="dropdown-item" href="#">Lihat</a>
+         <a class="dropdown-item" href="#">Registrasi</a>
+        </div>
+      </li>
       <li class="pull-right"><%= link_to "Login", "#", class: "nav-link" %></li>
       <li class="pull-right"><%= link_to "Daftar", "#", class: "nav-link" %></li>
     </ul>

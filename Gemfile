@@ -89,3 +89,6 @@ gem 'newrelic_rpm'
 
 #debug email
 # gem 'mailcatcher'
+
+#using JavaScript
+# gem 'webpacker', git: 'https://github.com/rails/webpacker.git'
