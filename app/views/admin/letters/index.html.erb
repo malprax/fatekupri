@@ -1,0 +1,47 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <h5>Daftar Nama Permohonan</h5>
+    </div>
+    <table class="table">
+      <tr>
+        <th>No</th>
+        <th>Bulan</th>
+        <th>Tahun</th>
+        <th>Nama Siswa</th>
+        <th>Stambuk</th>
+        <th>Jurusan</th>
+        <th>Semester</th>
+        <th>Tahun Ajaran</th>
+        <th>Nama Orang Tua</th>
+        <th>NIP</th>
+        <th>Pangkat</th>
+        <th>Instansi</th>
+        <th>Tgl Surat</th>
+        <th col-span="3">Action</th>
+      </tr>
+      <tr>
+      <% @letters.each do |letter| %>
+        <td><%= letter.number %></td>
+        <td><%= "Month" %></td>
+        <td><%= "Year" %></td>
+        <td><%= letter.name %></td>
+        <td><%= letter.stambuk %></td>
+        <td><%= "Jurusan" %></td>
+        <td><%= letter.semester %></td>
+        <td><%= "Tahun Ajaran" %></td>
+        <td><%= letter.parents %></td>
+        <td><%= letter.employee_number %></td>
+        <td><%= letter.employee_level %></td>
+        <td><%= letter.company_name %></td>
+        <td><%= letter.letter_date %></td>
+        <td>
+          <%= "Edit" %>
+          <%= "Show" %>
+          <%= "Action" %>
+        </td>
+      <% end %>
+      </tr>
+    </table>
+  </div>
+</div>
