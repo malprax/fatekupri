@@ -1,0 +1,2 @@
+class Lecture < User
+end

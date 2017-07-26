@@ -1,0 +1,2 @@
+class LectureProfile < User
+end
